@@ -1,0 +1,39 @@
+:root {
+    --color-text-opt: #090e10;
+    --color-text-light: #d9e1e4;
+    --color-black: #000000;
+    /*Background Template*/
+    /* --theme-dark-background: #000000f1;
+    --theme-dark-border: #000000;
+    --theme-dark-text: #00043C; */
+
+    --theme-light-background: rgb(255, 255, 255);
+    --theme-light-background-shadow-26: rgba(0, 0, 0, 0.26);
+    --theme-light-background-shadow-085:rgba(0, 0, 0, 0.085);
+    --theme-light-border: rgba(0, 0, 0, 0.2);
+    --theme-light-lightText: #ebebeb;
+    --theme-light-darkText: #070707ee;
+
+    /*Theme Color Pattern*/
+    --theme-secound: #005D6C;
+    --theme-secound-after: #003139;
+    --theme-primary-main: #00065f;
+    --theme-primary-after: #00043C;
+
+    --theme-secound-veryFaint:#01222704;
+    --theme-secound-shadow-10:#0122274f;
+
+    --theme-primary-main-veryFaint:#02042510;
+    --theme-primary-main-shadow-20:#020425a2;
+
+
+    
+    /*template for bootstrap*/
+    --color-sucsess: #198754;
+    --color-danger: #dc3545;
+    --color-warning: #ffc107;
+    --color-info: #0dcaf0;
+    --color-primary: #0d6efd;
+    --color-secondary: #6c757d;
+
+}

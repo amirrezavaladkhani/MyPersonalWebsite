@@ -1,0 +1,260 @@
+/*#region Header Styles*/
+.header {
+    height: 5.5em;
+    padding: 2em 0 4em 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    max-width: 260px;
+    flex: 1;
+}
+
+.header-logo img {
+    width: 200px;
+}
+
+.header-search {
+    max-width: 360px;
+    flex: 2;
+}
+/*#endregion*/
+
+/*#region Nav Styles*/
+
+.nav {
+    align-items: center;
+    max-width: 820px;
+    flex: 3;
+}
+
+.nav-items {
+    min-width: 8em;
+}
+
+.nav-items a {
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    margin: 0 auto;
+}
+
+
+.nav-list li {
+    line-height: 2.5em;
+    border-top: 1px solid var(--theme-light-background-shadow-25);
+    display: flex;
+}
+
+.nav-groups a {
+    margin: 0 auto;
+}
+
+.nav-groups {
+    z-index: 1;
+    height: 0;
+    transition: all var(--delay) ease-in-out;
+}
+
+.chiledItem {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-groups:hover .chiledItem {
+    opacity: 1;
+    visibility: visible;
+    transition: all var(--delay) ease-in-out;
+}
+/*#endregion*/
+
+/*#region Warpper Styles*/
+.heroImage {
+    max-width: 720px;
+    padding: 0 2em;
+}
+
+.heroImage img {
+    max-height: 380px;
+}
+
+.hero {
+    max-width: 720px;
+    justify-content: space-around;
+    text-align: justify;
+    line-height: 2em;
+    padding: 1.5em 5em;
+    flex-direction: column;
+    background-color: var(--theme-light-background-shadow-065);
+}
+
+.warpper {
+    z-index: 0;
+}
+/*#endregion*/
+
+/*#region Section Styles*/
+.section {
+    flex-flow: row wrap;
+    text-align: justify;
+    margin: 5em auto;
+    min-height: 35em;
+    max-width: 1440px;
+}
+
+.sectionElements {
+    margin: 1em auto;
+    width: 420px;
+    height: 17em;
+    border-radius: 1em;
+    box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26);
+}
+
+.sectionElementItem {
+    max-width: 85%;
+    line-height: 1.75em;
+    margin: 1em auto 0;
+}
+
+.sectionElementItem h3{
+    margin: 1.2em 0 0.8em;
+}
+.sectionElementItem p{
+    margin: 0 0.8em;
+}
+/*#endregion*/
+
+/*#region card Styles*/
+.card {
+    width: 100%;
+    height: 20em;
+    margin-bottom: 5em;
+    color: var(--color-text-light);
+    background-color: var(--theme-light-darkText);
+}
+
+.cardContent {
+    width: 1440px;
+    flex-direction: column;
+}
+
+.cardContent span {
+    color: orange;
+}
+
+.cardHeader {
+    align-items: center;
+    margin: 2em;
+    justify-content: space-between;
+}
+
+.cardContents {
+    justify-content: space-evenly;
+    height: 80%;
+}
+.cardLink{
+    max-width: 300px;
+    height: 180px;
+    font-size: 1.1em;
+    position: relative;
+    text-align: center;
+    border-radius: 1em;
+    box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26);
+}
+
+.cardLink img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1em;
+
+}
+
+.cardLinkDetails{
+    top: 0;
+    color: transparents;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    border-radius: 1em;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--Delay) ease-in;
+}
+.cardLinkDetails p{
+    margin: 0 1em;
+}
+
+.cardLink:hover .cardLinkDetails{    
+    opacity: 1;
+    visibility: visible;
+    color: var(--color-text-light);
+    backdrop-filter: blur(0.2em);
+    background-color: var(--theme-light-background-shadow-26);
+    transition: all var(--delay) ease-in-out;
+}
+/*#endregion*/
+
+/*#region footer Styles*/
+.footer{
+    box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26),-0.1em -0.2em 0.2em var(--theme-light-background-shadow-26);
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1440px;
+    height: 20em;
+}
+.footerMainSection{
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.footerRightSection{
+    width: 50em;
+    height: 90%;
+}
+
+.helpfullLink{
+    margin: 2.5em 1em;
+    justify-content: flex-start;
+}
+.helpfullLink a{
+    margin: 0 1.5em;
+}
+
+.AboutInFooter{
+    margin: 2.5em;
+    line-height: 2em;
+}
+
+.symbols{
+    width: 34.5em;
+    height: 90%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footerBottomSection{
+    border-top: 1px solid var(--theme-light-background-shadow-26);
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20%;
+}
+.footerBottomSection p{
+    margin: 0 3em;
+}
+
+.socialMedia a{
+    margin: 0 1em;
+}
+/*#endregion*/

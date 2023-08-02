@@ -1,0 +1,19 @@
+:root {
+    --color-black-80: rgba(0, 0, 0, 0.8);
+    --color-black-60: rgba(0, 0, 0, 0.6);
+    --color-black-40: rgba(0, 0, 0, 0.4);
+    --color-black-20: rgba(0, 0, 0, 0.2);
+
+
+    --color-blue: rgb(10, 10, 255);
+    --color-blue-80: rgba(10, 10, 255, 0.8);
+    --color-blue-60: rgba(10, 10, 255, 0.6);
+    --color-blue-40: rgba(10, 10, 255, 0.4);
+    --color-blue-20: rgba(10, 10, 255, 0.2);
+
+    --color-red: rgb(200, 48, 0);
+    --color-red-80: rgba(200, 48, 0, 0.8);
+    --color-red-60: rgba(200, 48, 0, 0.6);
+    --color-red-40: rgba(200, 48, 0, 0.4);
+    --color-red-20: rgba(200, 48, 0, 0.2);
+}
