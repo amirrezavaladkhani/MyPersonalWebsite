@@ -1,7 +1,3 @@
-* {
-    font-family: vazir;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -9,6 +5,11 @@ html {
 @font-face {
     font-family: vazir;
     src: url('../../fonts/Vazir.ttf');
+}
+
+@font-face {
+    font-family: IranSans;
+    src: url('../../fonts/IRANSansWeb\(FaNum\).woff');
 }
 
 :root {
@@ -90,3 +91,45 @@ input[type="search"] {
     display: flex !important;
     justify-content: center;
 }
+
+.container{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 1270px;
+    padding: 1em;
+}
+
+.pub-warpper{
+    width: 100%;
+}
+
+.fullShadow{
+    box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26), -0.1em -0.2em 0.2em var(--theme-light-background-shadow-26);
+}
+
+.shadow{
+    box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26);
+}
+
+.br-1{
+    border-radius: 1em;
+}
+
+.br-smaill{
+    border-radius: 0.5em;
+}
+.fa-num{
+    font-family: IranSans;
+}
+
+.fs-smaill{
+    font-size: 0.8em;
+}
+
+.m-small{
+    margin: 0.5em;
+}
+/* .p-small{
+    padding: 0.4em;
+} */

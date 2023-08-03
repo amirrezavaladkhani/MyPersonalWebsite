@@ -20,6 +20,7 @@
     max-width: 360px;
     flex: 2;
 }
+
 /*#endregion*/
 
 /*#region Nav Styles*/
@@ -70,6 +71,7 @@
     visibility: visible;
     transition: all var(--delay) ease-in-out;
 }
+
 /*#endregion*/
 
 /*#region Warpper Styles*/
@@ -95,23 +97,19 @@
 .warpper {
     z-index: 0;
 }
+
 /*#endregion*/
 
 /*#region Section Styles*/
 .section {
     flex-flow: row wrap;
     text-align: justify;
-    margin: 5em auto;
-    min-height: 35em;
-    max-width: 1440px;
 }
 
 .sectionElements {
     margin: 1em auto;
-    width: 420px;
+    width: 25em;
     height: 17em;
-    border-radius: 1em;
-    box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26);
 }
 
 .sectionElementItem {
@@ -120,33 +118,82 @@
     margin: 1em auto 0;
 }
 
-.sectionElementItem h3{
+.sectionElementItem h3 {
     margin: 1.2em 0 0.8em;
 }
-.sectionElementItem p{
+
+.sectionElementItem p {
     margin: 0 0.8em;
 }
-/*#endregion*/
 
+/*#endregion*/
+/*#region Weblog Styles*/
+.webLog {
+    flex-direction: column;
+}   
+
+.webLogContents{
+    align-items: center;
+    justify-content: space-evenly;
+    width: inherit;
+    height: 30em;
+}
+
+.webLogContent{
+    width: 23%;
+    height: 90%;
+    align-items: center;
+    flex-direction: column;
+        justify-content: flex-start ;
+}
+
+.webLogContentThumbnail{
+    width: 90%;
+    height: auto;
+    margin:0.75em 0;
+}
+
+.webLogContentThumbnail img{
+    width: 100%;
+}
+
+.webLogContentDetail{
+    width: 90%;
+    color: var(--color-text-light) !important;
+    justify-content: space-between;
+}
+
+.webLogContentDetail a{
+    color: var(--theme-primary-main) !important;
+}
+.webLogContentTags{
+    border-top: 1px dashed var(--color-text-light);
+    border-bottom: 1px dashed var(--color-text-light);
+    padding: 0;
+}
+.webLogContentTag{
+    background-color: var(--theme-light-background-shadow-085);
+    padding: 0.2em 0.5em;
+}
+/*#endregion*/
 /*#region card Styles*/
 .card {
-    width: 100%;
     height: 20em;
-    margin-bottom: 5em;
     color: var(--color-text-light);
     background-color: var(--theme-light-darkText);
 }
 
 .cardContent {
-    width: 1440px;
     flex-direction: column;
 }
 
-.cardContent span {
+.cardHeader span,
+.webLogHeader span {
     color: orange;
 }
 
-.cardHeader {
+.cardHeader,
+.webLogHeader {
     align-items: center;
     margin: 2em;
     justify-content: space-between;
@@ -155,116 +202,107 @@
 .cardContents {
     justify-content: space-evenly;
 }
-.cardLink{
+
+.cardLink {
     max-width: 300px;
     height: 180px;
     font-size: 1.1em;
     position: relative;
     text-align: center;
-    border-radius: 1em;
-    box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26);
 }
 
-.cardLink img{
+.cardLink img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 1em;
-
 }
 
-.cardLinkDetails{
+.cardLinkDetails {
     top: 0;
     color: transparents;
     width: 100%;
     height: 100%;
-    display: flex;
     position: absolute;
     align-items: center;
-    border-radius: 1em;
-    justify-content: center;
     opacity: 0;
     visibility: hidden;
     transition: all var(--Delay) ease-in;
 }
-.cardLinkDetails p{
-    margin: 0 1em;
-}
 
-.cardLink:hover .cardLinkDetails{    
+.cardLink:hover .cardLinkDetails {
     opacity: 1;
     visibility: visible;
     color: var(--color-text-light);
     backdrop-filter: blur(0.2em);
+    -webkit-backdrop-filter: blur(0.2em);
     background-color: var(--theme-light-background-shadow-26);
     transition: all var(--delay) ease-in-out;
 }
+
 /*#endregion*/
 
 /*#region footer Styles*/
-.footer{
-    box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26),-0.1em -0.2em 0.2em var(--theme-light-background-shadow-26);
+.footer {
     flex-direction: column;
     margin: 0 auto;
 }
 
-.footerSection{
+.footerSection {
     width: 1440px;
     height: auto;
     margin: 0 auto;
 }
 
 
-.footerMainSection{
+.footerMainSection {
     height: 80%;
     margin: 0 auto;
     align-items: center;
 }
 
 
-.footerRightSection{
+.footerRightSection {
     width: 60%;
     height: 90%;
 }
 
-.helpfullLink{
+.helpfullLink {
     margin: 2.5em 1em;
     justify-content: flex-start;
 }
-.helpfullLink a{
+
+.helpfullLink a {
     margin: 0 1.5em;
 }
 
-.AboutInFooter{
+.AboutInFooter {
     margin: 2.5em;
     line-height: 2em;
 }
 
-.symbols{
+.symbols {
     width: 40%;
     height: 90%;
     align-items: center;
 }
 
-.footerBottomSection{
+.footerBottomSection {
     border-top: 1px solid var(--theme-light-background-shadow-26);
     justify-content: space-around;
-
-
     text-align: center;
     align-items: center;
     height: 20%;
 }
 
-.privacy{
+.privacy {
     max-width: 60em;
 }
 
-.socialMedia{
+.socialMedia {
     max-width: 30em;
 }
 
-.social{
+.social {
     margin: 0 1em;
 }
 
