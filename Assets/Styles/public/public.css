@@ -2,13 +2,17 @@
     font-family: vazir;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: vazir;
     src: url('../../fonts/Vazir.ttf');
 }
 
 :root {
-    --fastDelay:25ms;
+    --fastDelay: 25ms;
     --delay: 200ms;
 }
 
@@ -34,9 +38,10 @@ i {
     vertical-align: -0.125em;
     color: var(--theme-primary-main);
 }
- .bi{
+
+.bi {
     display: unset !important;
- }
+}
 
 h1,
 h2,

@@ -154,7 +154,6 @@
 
 .cardContents {
     justify-content: space-evenly;
-    height: 80%;
 }
 .cardLink{
     max-width: 300px;
@@ -207,19 +206,24 @@
     box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26),-0.1em -0.2em 0.2em var(--theme-light-background-shadow-26);
     flex-direction: column;
     margin: 0 auto;
-    width: 1440px;
-    height: 20em;
 }
+
+.footerSection{
+    width: 1440px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
 .footerMainSection{
-    width: 100%;
     height: 80%;
+    margin: 0 auto;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 
 .footerRightSection{
-    width: 50em;
+    width: 60%;
     height: 90%;
 }
 
@@ -237,24 +241,31 @@
 }
 
 .symbols{
-    width: 34.5em;
+    width: 40%;
     height: 90%;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 .footerBottomSection{
     border-top: 1px solid var(--theme-light-background-shadow-26);
+    justify-content: space-around;
+
+
+    text-align: center;
     align-items: center;
-    justify-content: flex-start;
-    width: 100%;
     height: 20%;
 }
-.footerBottomSection p{
-    margin: 0 3em;
+
+.privacy{
+    max-width: 60em;
 }
 
-.socialMedia a{
+.socialMedia{
+    max-width: 30em;
+}
+
+.social{
     margin: 0 1em;
 }
+
 /*#endregion*/
