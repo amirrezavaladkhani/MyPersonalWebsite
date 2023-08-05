@@ -8,7 +8,8 @@
     --theme-dark-text: #00043C; */
 
     --theme-light-background: rgb(255, 255, 255);
-    --theme-light-background-shadow-26: rgba(0, 0, 0, 0.26);
+    /* --theme-light-background-shadow-26: rgba(0, 0, 0, 0.26); */
+    --theme-light-background-shadow-26: rgba(0, 0, 0, 0.08);
     --theme-light-background-shadow-085:rgba(0, 0, 0, 0.085);
     --theme-light-border: rgba(0, 0, 0, 0.2);
     --theme-light-lightText: #ebebeb;

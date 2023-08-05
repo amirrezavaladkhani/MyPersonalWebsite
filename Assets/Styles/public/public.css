@@ -20,9 +20,9 @@ html {
 body {
     margin: 0;
     font-size: 1em;
+    font-family: vazir;
     direction: rtl;
     color: var(--theme-light-darkText);
-    font-family: vazir;
     background-color: var(--theme-light-background);
 }
 
@@ -62,16 +62,17 @@ p {
 input[type="button"],
 .button {
     width: fit-content;
-    /*width: -moz-fit-content;*/
+    width: -moz-fit-content;
+    font-family: vazir;
     border: none;
     float: left;
     cursor: pointer;
     margin: 0 0.5em;
-    padding: 0.5em 1em;
+    padding: 0.25em 1em;
     border-radius: 0.5em;
     color: var(--theme-light-lightText);
     background-color: var(--theme-primary-main);
-    transition: background-color .5ss ease-in-out;
+    transition: background-color .5s ease-in-out;
     box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26);
 }
 
@@ -92,7 +93,7 @@ input[type="search"] {
     justify-content: center;
 }
 
-.container{
+.container {
     width: 100%;
     display: block;
     margin: 0 auto;
@@ -100,35 +101,39 @@ input[type="search"] {
     padding: 1em;
 }
 
-.pub-warpper{
+.pub-warpper {
     width: 100%;
 }
 
-.fullShadow{
-    box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26), -0.1em -0.2em 0.2em var(--theme-light-background-shadow-26);
+.fullShadow {
+    box-shadow: 0 0 16px var(--theme-light-background-shadow-26);
 }
 
-.shadow{
+.shadow {
     box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26);
 }
 
-.br-1{
+.br-1 {
     border-radius: 1em;
 }
 
-.br-smaill{
+.br-smaill {
     border-radius: 0.5em;
 }
-.fa-num{
+
+.fa-num {
     font-family: IranSans;
 }
 
-.fs-smaill{
+.fs-smaill {
     font-size: 0.8em;
 }
 
-.m-small{
-    margin: 0.5em;
+.m-small {
+    margin: 0.5em 0.75em !important;
+}
+.lh-2{
+    line-height : 2em;
 }
 /* .p-small{
     padding: 0.4em;
