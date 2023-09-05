@@ -1,6 +1,6 @@
 :root {
     --color-text-opt: #090e10;
-    --color-text-light: #d9e1e4;
+    --color-text-light: #ffffff;
     --color-black: #000000;
     /*Background Template*/
     /* --theme-dark-background: #000000f1;
@@ -13,6 +13,7 @@
     --theme-light-background-shadow-085:rgba(0, 0, 0, 0.085);
     --theme-light-border: rgba(0, 0, 0, 0.2);
     --theme-light-lightText: #ebebeb;
+    --theme-light-VerylightText: #fcfcfc;
     --theme-light-darkText: #070707ee;
 
     /*Theme Color Pattern*/

@@ -1,10 +1,13 @@
+*{
+    font-family: vazir;
+}
 html {
     scroll-behavior: smooth;
 }
 
 @font-face {
     font-family: vazir;
-    src: url('../../fonts/Vazir.ttf');
+    src: url('../../fonts/Vazirmatn-FD-Regular.woff2');
 }
 
 @font-face {
@@ -20,13 +23,19 @@ html {
 body {
     margin: 0;
     font-size: 1em;
-    font-family: vazir;
     direction: rtl;
     color: var(--theme-light-darkText);
     background-color: var(--theme-light-background);
 }
 
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
 a {
+    cursor: pointer;
     text-decoration: none;
     color: var(--theme-light-darkText);
 }
@@ -38,6 +47,7 @@ ul {
 i {
     vertical-align: -0.125em;
     color: var(--theme-primary-main);
+    width: 320px;
 }
 
 .bi {
@@ -97,7 +107,7 @@ input[type="search"] {
     width: 100%;
     display: block;
     margin: 0 auto;
-    max-width: 1270px;
+    max-width: 1300px;
     padding: 1em;
 }
 
@@ -112,23 +122,30 @@ input[type="search"] {
 .shadow {
     box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26);
 }
-
+.p-0{
+    padding: 0;
+}
 .br-1 {
     border-radius: 1em;
 }
-
+.br-top{
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.br-bottom{
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
 .br-smaill {
     border-radius: 0.5em;
-}
-
-.fa-num {
-    font-family: IranSans;
 }
 
 .fs-smaill {
     font-size: 0.8em;
 }
-
+.p-812{
+    padding: 8px 12px;
+}
 .m-small {
     margin: 0.5em 0.75em !important;
 }

@@ -1,14 +1,14 @@
 /*#region Header Styles*/
 .header {
     height: 5.5em;
-    padding: 2em 0 4em 0;
+    padding: 2em 0;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
 .header-logo {
-    max-width: 240px;
+    max-width: 220px;
     flex: 1;
 }
 
@@ -17,8 +17,26 @@
 }
 
 .header-search {
-    max-width: 300px;
+    max-width: 360px;
+    justify-content: flex-end;
     flex: 2;
+}
+
+
+.searchBox{
+    border: none;
+    padding: 0;
+    width: 0;
+    transition: width var(--delay) ease-in-out;
+}
+.searchBox:focus{
+    outline: none;
+}
+
+.Search-Icon:focus-within
+ .searchBox{
+    width: 192px;
+    transition: all var(--delay) ease-in-out;
 }
 
 /*#endregion*/
@@ -27,16 +45,17 @@
 
 .nav {
     align-items: center;
-    max-width: 720px;
+    max-width: 680px;
     flex: 3;
 }
 
 .nav-items {
-    min-width: 8em;
+    min-width: 8.2em;
 }
 
 .nav-items a {
     margin: 0 auto;
+    
 }
 
 .nav-list {
@@ -53,6 +72,7 @@
 
 .nav-groups a {
     margin: 0 auto;
+    
 }
 
 .nav-groups {
@@ -64,6 +84,8 @@
 .chiledItem {
     opacity: 0;
     visibility: hidden;
+    padding: 0.2em 0.4em;
+    background-color: var(--theme-light-VerylightText);
 }
 
 .nav-groups:hover .chiledItem {
@@ -77,6 +99,7 @@
 /*#region Warpper Styles*/
 .heroImage {
     max-width: 720px;
+    height: 20em;
     padding: 0 2em;
 }
 
@@ -88,12 +111,15 @@
     max-width: 720px;
     justify-content: space-around;
     text-align: justify;
+    height: 20em;       
     padding: 1.5em 5em;
     flex-direction: column;
     background-color: var(--theme-light-background-shadow-065);
 }
 
 .warpper {
+    align-items: center;
+    height: 38em;
     z-index: 0;
 }
 
@@ -107,7 +133,7 @@
 
 .sectionElements {
     margin: 1em auto;
-    width: 25em;
+    width: 26em;
     height: 17em;
 }
 
@@ -235,7 +261,7 @@
     top: 0;
     color: transparents;
     width: 100%;
-    height: 100%;
+    height: 95%;
     position: absolute;
     align-items: center;
     opacity: 0;
@@ -247,10 +273,10 @@
     opacity: 1;
     visibility: visible;
     color: var(--color-text-light);
-    backdrop-filter: blur(0.2em);
-    -webkit-backdrop-filter: blur(0.2em);
+    backdrop-filter: blur(0.45em);
+    -webkit-backdrop-filter: blur(0.45em);
     background-color: var(--theme-light-background-shadow-26);
-    transition: all var(--delay) ease-in-out;
+    transition: opacity var(--delay) cubic-bezier(0.53, 0.33, 0.1, 0.99);;
 }
 
 /*#endregion*/
