@@ -5,16 +5,28 @@
 }
 
 .SignOnForm{
-    height: 35em;
-    max-width: 650px;
+    height: 30em;
+    max-width: 30em;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
-.SignOnForm input{
-    width: 500px;
+.SignOnForm input[type="email"]{
+    width: 20em;
+    border: none;
+    border-bottom: 1px solid black;
 }
 .inputSectionForm{
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+input[type="email"]:focus-visible{
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.field{
+    margin: 1em 0;
 }

@@ -278,7 +278,7 @@
     color: var(--color-text-light);
     backdrop-filter: blur(0.45em);
     -webkit-backdrop-filter: blur(0.45em);
-    background-color: var(--theme-light-background-shadow-26);
+    background-color: var(--theme-light-background-shadow-145);
     transition: opacity var(--delay) cubic-bezier(0.53, 0.33, 0.1, 0.99);;
 }
 
@@ -330,7 +330,7 @@
 }
 
 .footerBottomSection {
-    border-top: 1px solid var(--theme-light-background-shadow-26);
+    border-top: 1px solid var(--theme-light-background-shadow-145);
     justify-content: space-around;
     text-align: center;
     align-items: center;

@@ -83,7 +83,7 @@ input[type="button"],
     color: var(--theme-light-lightText);
     background-color: var(--theme-primary-main);
     transition: background-color .5s ease-in-out;
-    box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26);
+    box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-145);
 }
 
 input[type="button"]:hover,
@@ -116,11 +116,11 @@ input[type="search"] {
 }
 
 .fullShadow {
-    box-shadow: 0 0 16px var(--theme-light-background-shadow-26);
+    box-shadow: 0 0 16px var(--theme-light-background-shadow-145);
 }
 
 .shadow {
-    box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-26);
+    box-shadow: 0.1em 0.2em 0.2em var(--theme-light-background-shadow-145);
 }
 .p-0{
     padding: 0;
